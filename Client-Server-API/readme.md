@@ -26,13 +26,13 @@ O endpoint necessário gerado pelo server.go para este desafio será: /cotacao e
 
 
 
-### COMO RODAR O PROJETO ###
+## COMO RODAR O PROJETO ##
 
-# Client
+### Client
 - Lembre-se de rodar o comando `make client` para iniciar o client.
 
 
-# Server
+### Server
 - Lembre-se de rodar o comando `make serve` para iniciar o servidor.
 
 
