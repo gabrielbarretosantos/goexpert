@@ -66,7 +66,7 @@ func connectionDatabase() (*sql.DB, error) {
 }
 
 func saveDB(ex *Exchange) error {
-	ctx, cancel := context.WithTimeout(context.Background(), 300*time.Millisecond)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Millisecond)
 	defer cancel()
 	db, err := connectionDatabase()
 	if err != nil {
@@ -96,7 +96,7 @@ func saveDB(ex *Exchange) error {
 }
 
 func fetchExchange() (*Exchange, error) {
-	ctx, cancel := context.WithTimeout(context.Background(), 300*time.Millisecond)
+	ctx, cancel := context.WithTimeout(context.Background(), 200*time.Millisecond)
 	defer cancel()
 	req, err := http.NewRequestWithContext(ctx, "GET", "https://economia.awesomeapi.com.br/json/last/USD-BRL", nil)
 	if err != nil {
