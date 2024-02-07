@@ -19,6 +19,10 @@ make setup
 ```
 
 ```bash
+make create-migrations
+```
+
+```bash
 make run-migrations
 ```
 
