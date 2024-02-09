@@ -16,5 +16,6 @@ run-migrations:
 	rm $(GOOSE_BINARY)
 
 create-migrations:
+	mkdir migrations
 	chmod +x create_migration.sh
 	./create_migration.sh create_table_orders
